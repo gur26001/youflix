@@ -1,0 +1,25 @@
+.sidebarrow {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.sidebarrow:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+.sidebarrow:hover * {
+  color: rgb(63, 63, 63);
+}
+
+.sidebarrow_icon {
+  color: rgb(133, 133, 133);
+}
+.sidebarrow_title {
+  font-weight: 500;
+  flex: 1;
+  font-size: 1.001pc;
+  margin-left: 12px;
+  color: rgb(133, 133, 133);
+  /* border: 1px dashed gray; */
+}

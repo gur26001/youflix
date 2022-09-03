@@ -1,0 +1,19 @@
+.sidebar {
+  flex: 0.2;
+  height: 100vh;
+  position: sticky;
+  left: 0;
+  /* overflow: auto;
+  background-color: white; */
+}
+.sidebar .selected {
+  background-color: lightgray;
+}
+
+.sidebar .selected * {
+  color: black;
+  font-weight: bold;
+}
+.sidebar hr {
+  margin: 10px 0 10px 0;
+}
