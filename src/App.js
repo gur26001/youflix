@@ -2,8 +2,8 @@ import './App.css';
 import Sidebar from './Components/Sidebar';
 import Header from './Components/Header';
 import RecommendedVideos from './Components/RecommendedVideos';
-import {BrowserRouter as Router,Routes,Route} from "react-router-dom"
-import Searchpage from './Components/Searchpage';
+import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
+import Searchpage from './routes/Searchpage';
 
 
 function App() {
