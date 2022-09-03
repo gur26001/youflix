@@ -1,0 +1,29 @@
+.channelRow {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+.channelRow_txt {
+  display: flex;
+  flex-direction: column;
+}
+
+.channelRow_txt > p {
+  font-size: small !important;
+  color: #909090;
+}
+.channelRow_logo {
+  height: 120px !important;
+  width: 120px !important;
+  margin: 10px 60px;
+  object-fit: contain;
+}
+.channelRow_channelname{
+    display: flex;
+    align-items: center;
+    justify-items: flex-start;
+}
+.verifiedB{
+    margin: 10px;
+}
+
