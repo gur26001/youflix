@@ -10,24 +10,32 @@ function App() {
   return (
     <div className="app">
       <Router>
+
+        {/* header */}
         <Header />
-        <Routes>
-          <Route path="/search/:searchTerm" element={
-              <div className='app_page'>
-                  <Sidebar/>
-                  <Searchpage/>
-              </div>
-              
-          }/>
-          <Route path="/" element={     
-              <div className='app_page'>
-                  <Sidebar/>
-                  <RecommendedVideos/>
-              </div> 
-          } />
-          
-       </Routes>
-      </Router>
+        <div  className='app_page'>
+          <Sidebar/>
+          <Routes>
+            <Route path="/search/:searchTerm" element={
+                
+                    <Searchpage/>
+                
+                
+            }/>
+
+            <Route path="/" element={     
+                
+                    <RecommendedVideos/>
+                
+            } />
+            
+            <Route path='/video/:id' element={""} />
+
+        </Routes>
+  
+        </div>
+
+        </Router>
 
     
     </div>
