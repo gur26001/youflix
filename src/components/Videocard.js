@@ -1,4 +1,4 @@
-import { Avatar } from '@material-ui/core'
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import React from 'react'
 import './Videocard.css'
 
@@ -7,7 +7,7 @@ function Videocard({title,timestamp,channelName,videoimage,views,channelImage}) 
         <div className='videoCard'>
             <img className='videoCard_thumbnail' src={videoimage} alt=""/>
             <div className='videoCard_info'>
-                <Avatar className='videoCard_avatar' src={channelImage} alt={channelName} />
+                <AccountCircleIcon className='videoCard_AccountCircleIcon' src={channelImage} alt={channelName} />
                 <div className='videoCard_txt'>
                     <h5>{title}</h5>
                     <p>{channelName}</p>

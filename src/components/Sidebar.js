@@ -1,4 +1,4 @@
-import { ArrowDownward, ArrowDropDown, Book, Feedback, Gamepad, Help, History, Home, OndemandVideo, ScreenLockLandscape, Settings, Sports, Subscriptions, Theaters, ThumbUp, VideoLibrary, ViewStream, WatchLater, Whatshot } from '@material-ui/icons';
+import { ArrowDownward, ArrowDropDown, Book, Feedback, Gamepad, Help, History, Home, OndemandVideo, ScreenLockLandscape, Settings, Sports, Subscriptions, Theaters, ThumbUp, VideoLibrary, ViewStream, WatchLater, Whatshot } from '@mui/icons-material';
 import React from 'react'
 import './Sidebar.css';
 import SidebarRow from './SidebarRow';

@@ -1,9 +1,11 @@
 
 import React,{useState} from 'react';
-import Menu from '@material-ui/icons/Menu';
-import { Apps, Notifications, Search, VideoCall } from '@material-ui/icons';
+import Menu from '@mui/icons-material/Menu';
+import { Apps, Notifications, Search, VideoCall } from '@mui/icons-material';
 import logo from '../media/logo.png';
-import { Avatar } from '@material-ui/core';
+
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+
 import avatar from '../media/avatar.png';
 import './Header.css';
 import { Link } from 'react-router-dom';
@@ -32,7 +34,7 @@ function Header() {
                 <Apps className='header_icon'/>
                 <VideoCall className='header_icon'/>
                 <Notifications className='header_icon' />
-                <Avatar alt="incredibleHulk" src={avatar}/>
+                <AccountCircleIcon alt="incredibleHulk" src={avatar}/>
              </div>
             
         </div>

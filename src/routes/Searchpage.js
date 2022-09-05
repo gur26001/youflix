@@ -1,6 +1,6 @@
 import React from 'react'
 import './Searchpage.css'
-import {Tune } from '@material-ui/icons';
+import {Tune } from '@mui/icons-material';
 import ChannelRow from '../Components/ChannelRow';
 import VideoRow from '../Components/VideoRow';
 

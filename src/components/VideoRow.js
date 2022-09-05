@@ -1,5 +1,5 @@
 import React from 'react'
-import { CheckCircle } from '@material-ui/icons'
+import { CheckCircle } from '@mui/icons-material'
 import './VideoRow.css'
 
 function VideoRow({views,verified,desciption,timestamp,channel,title,image}) {

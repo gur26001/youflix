@@ -1,5 +1,5 @@
-import { Avatar } from '@material-ui/core'
-import { CheckCircle } from '@material-ui/icons'
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import { CheckCircle } from '@mui/icons-material'
 
 
 
@@ -9,7 +9,7 @@ import './ChannelRow.css'
 function ChannelRow({image,channelname,verified,subs,noOfVideos,description}) {
     return (
         <div className='channelRow'>
-            <Avatar className='channelRow_logo' src={image}/>
+            <AccountCircleIcon className='channelRow_logo' src={image}/>
             <div className='channelRow_txt'>
                  <h2 className='channelRow_channelname'>{channelname} {verified && <CheckCircle className='verifiedB'/>}</h2>
                  <p>
