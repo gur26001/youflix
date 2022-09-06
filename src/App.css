@@ -7,3 +7,14 @@
   width: 100%;
   
 }
+.d__flex {
+  display: flex;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.align__items__center{
+  align-items: center;
+}
