@@ -4,6 +4,7 @@ import Header from './Components/Header';
 import RecommendedVideos from './Components/RecommendedVideos';
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
 import Searchpage from './routes/Searchpage';
+import Singlevideo from './Components/Singlevideo';
 
 
 function App() {
@@ -29,7 +30,7 @@ function App() {
                 
             } />
             
-            <Route path='/video/:id' element={""} />
+            <Route path='/video/:id' element={<Singlevideo />} />
 
         </Routes>
   
