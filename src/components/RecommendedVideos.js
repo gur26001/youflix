@@ -18,7 +18,7 @@ function RecommendedVideos() {
           key: API_KEY,
           part: "snippet",
           chart: "mostPopular",
-          maxResult: 10,
+          maxResult: 1,
           regionCode: "IN",
         })
     )
