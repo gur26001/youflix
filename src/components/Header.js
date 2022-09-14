@@ -24,6 +24,7 @@ function Header() {
             
             <div className='header_input'>
                 <input onChange={e=>setInputSearch(e.target.value)} value={inputSearch} className='search_i' type="text"/>
+                
                 <Link to={`search/${inputSearch}`}>
                     <Search className='search_btn'/>
                 </Link>

@@ -3,13 +3,21 @@ import './Searchpage.css'
 import {Tune } from '@mui/icons-material';
 import ChannelRow from '../Components/ChannelRow';
 import VideoRow from '../Components/VideoRow';
+import { useParams } from 'react-router-dom';
+
+
 
 function Searchpage() {
+    const {searchTerm} = useParams();
+
+
     return (
         <div className='searchPage'>
+            <h3>{searchTerm} </h3>
             <div className='searchPage_filter'>
                 <Tune className='searchPage_filter_icon'/>
                 <h2>Filter</h2>
+                
             </div>
             <hr/>
             <ChannelRow 
