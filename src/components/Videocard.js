@@ -16,7 +16,7 @@ function Videocard(props) {
                     <h5>{props.dt.snippet.localized.title}</h5>
                     <p>{props.dt.snippet.channelTitle}</p>
                     <p>
-                        {"8M"} Views <b>•</b> {props.dt.publishedAt}
+                        {"8M"} Views <b>•</b> 2 days ago
                     </p>
                 </div>
             </div>
