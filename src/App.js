@@ -25,12 +25,7 @@ function App() {
           
           
           <Routes>
-            <Route path="/search/:searchTerm" element={
-                                  
-                    <Searchpage />
-                
-                
-            }/>
+
 
             <Route path="/" element={     
                 
