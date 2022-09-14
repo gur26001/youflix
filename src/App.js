@@ -11,6 +11,9 @@ import Singlevideo from './Components/Singlevideo';
 
 
 function App() {
+
+
+
   return (
     <div className="app">
       <Router>
@@ -23,8 +26,8 @@ function App() {
           
           <Routes>
             <Route path="/search/:searchTerm" element={
-                
-                    <Searchpage/>
+                                  
+                    <Searchpage />
                 
                 
             }/>
