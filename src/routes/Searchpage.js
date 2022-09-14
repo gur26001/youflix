@@ -31,6 +31,7 @@ const dt=props.search;
                 dt.map((item)=>{
                     return <div key={item.id.videoId}>
                         <VideoRow
+                            id={item.id.videoId}
                             views={"26K"}
                             verified
                             desciption={item.snippet.desciption}
@@ -40,6 +41,7 @@ const dt=props.search;
                             title={item.snippet.title}
                             image={
                                 item.snippet.thumbnails.high.url
+                            
                             }
                         />
                     </div>

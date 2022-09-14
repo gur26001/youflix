@@ -7,6 +7,7 @@ import './Videocard.css'
 function Videocard(props) {
     console.log(props);
     return (
+        <a href={`https://www.youtube.com/watch?v=${props.dt.id}`}>
         <div key={props.dt.id} className='videoCard'>
             <img className='videoCard_thumbnail' src={props.dt.snippet.thumbnails.high.url}  alt=""/>
             <div className='videoCard_info'>
@@ -20,6 +21,7 @@ function Videocard(props) {
                 </div>
             </div>
         </div>
+        </a>
     )
 }
 
