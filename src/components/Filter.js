@@ -39,13 +39,13 @@ function Filter() {
           viewBox="0 0 16 16"
           preserveAspectRatio="xMidYMid meet"
           focusable="false"
-          class="style-scope yt-icon pointer"
+          className="style-scope yt-icon pointer"
           style={{"width":"20px"}}
         >
-          <g mirror-in-rtl="" class="style-scope yt-icon">
+          <g mirror-in-rtl="" className="style-scope yt-icon">
             <path
               d="M4.97,12.65L9.62,8L4.97,3.35l0.71-0.71L11.03,8l-5.35,5.35L4.97,12.65z"
-              class="style-scope yt-icon"
+              className="style-scope yt-icon"
             ></path>
           </g>
         </svg>

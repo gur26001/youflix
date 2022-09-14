@@ -2,17 +2,20 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import React from 'react'
 import './Videocard.css'
 
-function Videocard({title,timestamp,channelName,videoimage,views,channelImage}) {
+// title,timestamp,channelName,videoimage,views,channelImage
+
+function Videocard(props) {
+    console.log(props);
     return (
-        <div className='videoCard'>
-            <img className='videoCard_thumbnail' src={videoimage} alt=""/>
+        <div key={props.dt.id} className='videoCard'>
+            <img className='videoCard_thumbnail' src={props.dt.snippet.thumbnails.high.url}  alt=""/>
             <div className='videoCard_info'>
-                <AccountCircleIcon className='videoCard_AccountCircleIcon' src={channelImage} alt={channelName} />
+                <AccountCircleIcon className='videoCard_AccountCircleIcon' src={""} alt="" />
                 <div className='videoCard_txt'>
-                    <h5>{title}</h5>
-                    <p>{channelName}</p>
+                    <h5>{props.dt.snippet.localized.title}</h5>
+                    <p>{props.dt.snippet.channelTitle}</p>
                     <p>
-                        {views} Views <b>•</b> {timestamp}
+                        {"8M"} Views <b>•</b> {props.dt.publishedAt}
                     </p>
                 </div>
             </div>
