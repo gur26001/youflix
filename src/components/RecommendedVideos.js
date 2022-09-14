@@ -1,32 +1,51 @@
-import './RecommendedVideos.css';
-
-
-import React from 'react'
-import Video from './Videocard';
-import Filter from './Filter';
+import "./RecommendedVideos.css";
+// import React, { useState } from 'react'
+import Video from "./Videocard";
+import Filter from "./Filter";
+import { useEffect, useState } from "react";
 
 function RecommendedVideos() {
-    return (
-        <div className='recommended'>
-           <Filter/>
-           <div className='recommended_videos'>
-                <Video videoimage={"https://i.ytimg.com/vi/zpAePAYLy10/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLB_ENOUOnLAMbfPL7V90ut8i_OOXg"} title={"INSANE $10,000 REAL LIFE IRONMAN COLLECTION UNBOXING & REVIEW 🤯🔥"} channelName={"Jeremy Lynch"} channelImage={"https://lh3.googleusercontent.com/ZiH4fynOOmJOgpvWpJIE17UnZ43LUPXZS6rjJjZAGpG-YYzrZhx-9M1OWNxrwfNP6haSjg=s48"} views={"1.8M"} timestamp={"1 year ago"} />
-                <Video videoimage={"https://i.ytimg.com/vi/zpAePAYLy10/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLB_ENOUOnLAMbfPL7V90ut8i_OOXg"} title={"INSANE $10,000 REAL LIFE IRONMAN COLLECTION UNBOXING & REVIEW 🤯🔥"} channelName={"Jeremy Lynch"} channelImage={"https://lh3.googleusercontent.com/ZiH4fynOOmJOgpvWpJIE17UnZ43LUPXZS6rjJjZAGpG-YYzrZhx-9M1OWNxrwfNP6haSjg=s48"} views={"1.8M"} timestamp={"1 year ago"} />
-                <Video videoimage={"https://i.ytimg.com/vi/zpAePAYLy10/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLB_ENOUOnLAMbfPL7V90ut8i_OOXg"} title={"INSANE $10,000 REAL LIFE IRONMAN COLLECTION UNBOXING & REVIEW 🤯🔥"} channelName={"Jeremy Lynch"} channelImage={"https://lh3.googleusercontent.com/ZiH4fynOOmJOgpvWpJIE17UnZ43LUPXZS6rjJjZAGpG-YYzrZhx-9M1OWNxrwfNP6haSjg=s48"} views={"1.8M"} timestamp={"1 year ago"} />
-                <Video videoimage={"https://i.ytimg.com/vi/zpAePAYLy10/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLB_ENOUOnLAMbfPL7V90ut8i_OOXg"} title={"INSANE $10,000 REAL LIFE IRONMAN COLLECTION UNBOXING & REVIEW 🤯🔥"} channelName={"Jeremy Lynch"} channelImage={"https://lh3.googleusercontent.com/ZiH4fynOOmJOgpvWpJIE17UnZ43LUPXZS6rjJjZAGpG-YYzrZhx-9M1OWNxrwfNP6haSjg=s48"} views={"1.8M"} timestamp={"1 year ago"} />
+  const API_KEY = "AIzaSyDiEDONQlWnA9E7BbgLuX9E-tkxI7ElzUs";
+  const VIDEOS_HTTP = "https://www.googleapis.com/youtube/v3/videos?";
+  const CHANNEL_HTTP = "https://www.googleapis.com/youtube/v3/channels?";
 
-                <Video videoimage={"https://i.ytimg.com/vi/zpAePAYLy10/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLB_ENOUOnLAMbfPL7V90ut8i_OOXg"} title={"INSANE $10,000 REAL LIFE IRONMAN COLLECTION UNBOXING & REVIEW 🤯🔥"} channelName={"Jeremy Lynch"} channelImage={"https://lh3.googleusercontent.com/ZiH4fynOOmJOgpvWpJIE17UnZ43LUPXZS6rjJjZAGpG-YYzrZhx-9M1OWNxrwfNP6haSjg=s48"} views={"1.8M"} timestamp={"1 year ago"} />
-                <Video videoimage={"https://i.ytimg.com/vi/zpAePAYLy10/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLB_ENOUOnLAMbfPL7V90ut8i_OOXg"} title={"INSANE $10,000 REAL LIFE IRONMAN COLLECTION UNBOXING & REVIEW 🤯🔥"} channelName={"Jeremy Lynch"} channelImage={"https://lh3.googleusercontent.com/ZiH4fynOOmJOgpvWpJIE17UnZ43LUPXZS6rjJjZAGpG-YYzrZhx-9M1OWNxrwfNP6haSjg=s48"} views={"1.8M"} timestamp={"1 year ago"} />
-                
-                <Video videoimage={"https://i.ytimg.com/vi/zpAePAYLy10/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLB_ENOUOnLAMbfPL7V90ut8i_OOXg"} title={"INSANE $10,000 REAL LIFE IRONMAN COLLECTION UNBOXING & REVIEW 🤯🔥"} channelName={"Jeremy Lynch"} channelImage={"https://lh3.googleusercontent.com/ZiH4fynOOmJOgpvWpJIE17UnZ43LUPXZS6rjJjZAGpG-YYzrZhx-9M1OWNxrwfNP6haSjg=s48"} views={"1.8M"} timestamp={"1 year ago"} />
-                <Video videoimage={"https://i.ytimg.com/vi/zpAePAYLy10/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLB_ENOUOnLAMbfPL7V90ut8i_OOXg"} title={"INSANE $10,000 REAL LIFE IRONMAN COLLECTION UNBOXING & REVIEW 🤯🔥"} channelName={"Jeremy Lynch"} channelImage={"https://lh3.googleusercontent.com/ZiH4fynOOmJOgpvWpJIE17UnZ43LUPXZS6rjJjZAGpG-YYzrZhx-9M1OWNxrwfNP6haSjg=s48"} views={"1.8M"} timestamp={"1 year ago"} />
-                <Video videoimage={"https://i.ytimg.com/vi/zpAePAYLy10/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLB_ENOUOnLAMbfPL7V90ut8i_OOXg"} title={"INSANE $10,000 REAL LIFE IRONMAN COLLECTION UNBOXING & REVIEW 🤯🔥"} channelName={"Jeremy Lynch"} channelImage={"https://lh3.googleusercontent.com/ZiH4fynOOmJOgpvWpJIE17UnZ43LUPXZS6rjJjZAGpG-YYzrZhx-9M1OWNxrwfNP6haSjg=s48"} views={"1.8M"} timestamp={"1 year ago"} />
-
-                <Video videoimage={"https://i.ytimg.com/vi/zpAePAYLy10/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLB_ENOUOnLAMbfPL7V90ut8i_OOXg"} title={"INSANE $10,000 REAL LIFE IRONMAN COLLECTION UNBOXING & REVIEW 🤯🔥"} channelName={"Jeremy Lynch"} channelImage={"https://lh3.googleusercontent.com/ZiH4fynOOmJOgpvWpJIE17UnZ43LUPXZS6rjJjZAGpG-YYzrZhx-9M1OWNxrwfNP6haSjg=s48"} views={"1.8M"} timestamp={"1 year ago"} />
-
-           </div>
-        </div>
+  const [vdata, setVdata] = useState([]);
+  
+  useEffect(() => {
+    fetch(
+      VIDEOS_HTTP +
+        new URLSearchParams({
+          key: API_KEY,
+          part: "snippet",
+          chart: "mostPopular",
+          maxResult: 1,
+          regionCode: "IN",
+        })
     )
+      .then((res) => res.json())
+      .then((data) => {
+        var d = data.items;
+
+        setVdata(d);
+      });
+  }, []);
+
+  console.log(vdata);
+
+  return (
+    <div className="recommended">
+      <Filter />
+      <div className="recommended_videos">
+        {vdata.map((data) => {
+           
+        const d= data;
+          return (
+            <Video dt={d}  />
+          );
+        })}
+      </div>
+    </div>
+  );
 }
 
-export default RecommendedVideos
+export default RecommendedVideos;
