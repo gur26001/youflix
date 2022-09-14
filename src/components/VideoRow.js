@@ -2,9 +2,10 @@ import React from 'react'
 import { CheckCircle } from '@mui/icons-material'
 import './VideoRow.css'
 
-function VideoRow({views,verified,desciption,timestamp,channel,title,image}) {
+function VideoRow({id,views,verified,desciption,timestamp,channel,title,image}) {
     return ( 
-        <div className='videoRow'>
+        <a href={`https://www.youtube.com/watch?v=${id}`}>
+        <div  className='videoRow'>
             <img className='videoRow_img' src={image}/>
             <div className='videoRow_txt'>
                 <h3>{title}</h3>
@@ -21,6 +22,7 @@ function VideoRow({views,verified,desciption,timestamp,channel,title,image}) {
             </div>
 
         </div>
+        </a>
     )
 }
 

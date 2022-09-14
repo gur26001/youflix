@@ -3,9 +3,6 @@ import Sidebar from './Components/Sidebar';
 import Header from './Components/Header';
 import RecommendedVideos from './Components/RecommendedVideos';
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
-import Searchpage from './routes/Searchpage';
-
-import Filter from './Components/Filter';
 import Singlevideo from './Components/Singlevideo';
 
 
@@ -20,21 +17,14 @@ function App() {
 
         {/* header */}
         <Header />
-        <div  className='app_page'>
-          <Sidebar/>
-          
-          
+        <div className='app_p'>
           <Routes>
-            <Route path="/search/:searchTerm" element={
-                                  
-                    <Searchpage />
-                
-                
-            }/>
-
             <Route path="/" element={     
-                
-                    <RecommendedVideos/>
+                    <div className='app_page' >
+                      <Sidebar/>
+                      <RecommendedVideos/>
+                    </div>    
+                    
                 
             } />
             

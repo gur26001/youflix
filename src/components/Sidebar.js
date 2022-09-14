@@ -4,7 +4,8 @@ import './Sidebar.css';
 import SidebarRow from './SidebarRow';
 
 
-function Sidebar() {
+function Sidebar(){
+    
     return (
         <div className='sidebar'>
             <SidebarRow selected Icon={Home} title={"Home"}/>
