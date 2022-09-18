@@ -22,7 +22,8 @@
 .header_input {
   display: flex;
   align-items: center;
-  width: 40%;
+  width: 50%;
+  padding: .3%;
   border: 1px solid lightgray;
 
   /* background-color; */
@@ -36,7 +37,8 @@
   align-items: center;
 }
 .search_btn {
-  width: 50px;
+  width: 64%;
+  height: 40px;
   background-color: #fafafa;
   color: gray;
   border: 1px solid lightgray;
