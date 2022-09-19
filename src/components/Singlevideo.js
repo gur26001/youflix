@@ -17,7 +17,7 @@ export default function Singlevideo() {
             <div className="rightSection">
                 <h1 >FILTER</h1>
                 <div className='recommededVideos'>
-
+                
                 </div>
             </div>
         </div>
