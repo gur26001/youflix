@@ -39,9 +39,10 @@
 .search_btn {
   width: 64%;
   height: 40px;
-  background-color: #fafafa;
-  color: gray;
-  border: 1px solid lightgray;
+  color: darkgray;
+  background-color: rgba(0,0,0,0);
+  /* border: 1px solid lightgray; */
+  margin-top: 3px;
 }
 
 .header_icon {
