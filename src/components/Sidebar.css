@@ -1,19 +1,29 @@
 .sidebar {
-  width: 14.6%;
+  width: 14.7%;
   height: 100vh;
   position: sticky;
   left: 1;
+  display: inline-block;
   /* overflow: auto;
   background-color: white; */
 }
 .sidebar .selected {
   background-color: lightgray;
+
 }
 
 .sidebar .selected * {
   color: black;
   font-weight: bold;
+
 }
 .sidebar hr {
-  margin: 10px 0 10px 0;
+  margin: 11px 0 11px 0;
+}
+
+@media (max-width : 1310px) {
+    label.logo{
+      font-size: 31px;
+      padding-left : 51px;
+    }
 }

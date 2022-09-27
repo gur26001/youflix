@@ -9,8 +9,6 @@ import Singlevideo from './Components/Singlevideo';
 
 function App() {
 
-
-
   return (
     <div className="app">
       <Router>
