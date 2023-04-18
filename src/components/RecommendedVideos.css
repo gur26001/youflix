@@ -1,17 +1,20 @@
 .recommended {
-    /* border:1px solid black;  */
-    width: 90%;
+
+    border:'1px solid black'; 
+    width: "90%";
     background-color: #f9f9f9;
-    
+    padding-right: 0;
     padding-bottom: 0;
   }
   
-  .recommended > h2 {
+.recommended > h2 {
     margin-left: 5px;
     margin-bottom: 20px;
   }
   
-  .recommended_videos{
+.recommended_videos{
+    border: '1px solid black';
       display: flex;
       flex-wrap: wrap;
+      width: inherit;
   }
