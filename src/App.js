@@ -1,16 +1,13 @@
 import './App.css';
-import Sidebar from './Components/Sidebar';
-import Header from './Components/Header';
-import RecommendedVideos from './Components/RecommendedVideos';
+import Sidebar from './Components/Sidebar.js';
+import Header from './Components/Header.js';
+import RecommendedVideos from './Components/RecommendedVideos.js';
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
-import Singlevideo from './Components/Singlevideo';
+import Singlevideo from './Components/Singlevideo.js';
 
 
 
 function App() {
-
-
-
   return (
     <div className="app">
       <Router>

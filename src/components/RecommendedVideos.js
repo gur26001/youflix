@@ -4,8 +4,11 @@ import Video from "./Videocard";
 import Filter from "./Filter";
 import { useEffect, useState } from "react";
 
+
+
 function RecommendedVideos() {
-  const API_KEY = "AIzaSyCI6IGjy34_JEsRN2CozE3qlpMBuhxKm-o";
+  
+  const API_KEY = 'AIzaSyCI6IGjy34_JEsRN2CozE3qlpMBuhxKm-o';
   const VIDEOS_HTTP = "https://www.googleapis.com/youtube/v3/videos?";
   const CHANNEL_HTTP = "https://www.googleapis.com/youtube/v3/channels?";
 
