@@ -23,6 +23,6 @@ function Videocard(props) {
         </div>
         </a>
     )
-}
+};
 
-export default Videocard
+export default Videocard;

@@ -64,6 +64,6 @@ function Header() {
       </Routes>
     </div>
   );
-}
+};
 
 export default Header;

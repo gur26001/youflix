@@ -31,6 +31,6 @@ function Sidebar(){
             <SidebarRow Icon={Feedback} title={"Feedback or Suggestion"}/>
         </div>
     )
-}
+};
 
-export default Sidebar
+export default Sidebar;

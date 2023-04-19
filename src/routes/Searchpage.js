@@ -1,9 +1,10 @@
 import React from 'react';
 import './Searchpage.css';
 import { Tune } from '@mui/icons-material';
-import ChannelRow from '.../src/Components/ChannelRow';
-import VideoRow from '.../src/Components/VideoRow';
-import Sidebar from '.../src/Components/Sidebar';
+import ChannelRow from '../Components/ChannelRow';
+import VideoRow from '../Components/VideoRow';
+import Sidebar from '../Components/Sidebar';
+
 
 function Searchpage(props) {
 	console.log('props:', props);

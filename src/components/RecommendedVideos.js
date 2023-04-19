@@ -43,6 +43,6 @@ function RecommendedVideos() {
 			</div>
 		</div>
 	);
-}
+};
 
 export default RecommendedVideos;

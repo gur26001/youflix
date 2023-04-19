@@ -20,6 +20,6 @@ function ChannelRow({image,channelname,verified,subs,noOfVideos,description}) {
            
         </div>
     )
-}
+};
 
-export default ChannelRow
+export default ChannelRow;

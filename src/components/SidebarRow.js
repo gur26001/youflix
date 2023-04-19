@@ -8,6 +8,6 @@ function SidebarRow({selected,Icon,title}) {
             <h5 className='sidebarrow_title'>{title}</h5>
         </div>
     )
-}
+};
 
-export default SidebarRow
+export default SidebarRow;

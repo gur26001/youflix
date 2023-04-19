@@ -24,6 +24,6 @@ function VideoRow({id,views,verified,desciption,timestamp,channel,title,image}) 
         </div>
         </a>
     )
-}
+};
 
-export default VideoRow
+export default VideoRow;
