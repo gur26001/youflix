@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import Menu from "@mui/icons-material/Menu";
 import { Apps, Notifications, Search, VideoCall } from "@mui/icons-material";
 import logo from "../media/logo.png";
-
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-
 import avatar from "../media/avatar.png";
 import "./Header.css";
 import { Link, Route, Routes } from "react-router-dom";
 import axios from "axios";
 import Searchpage from "../routes/Searchpage";
+// import env from 'react-dotenv';
+
 
 function Header() {
   const [inputSearch, setInputSearch] = useState("");
@@ -17,14 +17,14 @@ function Header() {
   
   function search(){
     axios
-      .get(
-        `https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=${inputSearch}&&key=AIzaSyCI6IGjy34_JEsRN2CozE3qlpMBuhxKm-o`
-      )
-      .then((res) => {
-        console.log(res.data.items);
-        setSearched(res.data.items);
-      })
-      .catch((err) => console.log(err));
+		.get(
+			`https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=${inputSearch}&&key=${process.env.REACT_APP_API_KEY}`
+		)
+		.then((res) => {
+			console.log(res.data.items);
+			setSearched(res.data.items);
+		})
+		.catch((err) => console.log(err));
 
       console.log("searched - > ",searched);
   }
