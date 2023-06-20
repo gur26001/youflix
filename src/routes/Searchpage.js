@@ -5,7 +5,6 @@ import ChannelRow from '../Components/ChannelRow';
 import VideoRow from '../Components/VideoRow';
 import Sidebar from '../Components/Sidebar';
 
-
 function Searchpage(props) {
 	console.log('props:', props);
 	const dt = props.search;

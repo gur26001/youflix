@@ -5,7 +5,7 @@ import Sidebar from './Components/Sidebar';
 import RecommendedVideos from './Components/RecommendedVideos';
 import Singlevideo from './Components/Singlevideo';
 import Header from './Components/Header';
- 
+
 function App() {
 	return (
 		<div className="app">
@@ -24,7 +24,7 @@ function App() {
 							}
 						/>
 
-						<Route path="/video/:id" element={<Singlevideo/>} />
+						<Route path="/video/:id" element={<Singlevideo />} />
 					</Routes>
 				</div>
 			</Router>
